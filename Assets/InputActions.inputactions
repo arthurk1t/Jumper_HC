@@ -1,0 +1,33 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "e0637177-a733-4138-8c08-7d3d88f346c5",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "57d09ebe-557b-4dd5-b9a9-dafcd2a185a3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "feae70d0-b0ed-4e52-a42f-a91d18da4952",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
