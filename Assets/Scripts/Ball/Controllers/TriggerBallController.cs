@@ -6,8 +6,19 @@ namespace Assets.Scripts
 {
     internal class TriggerBallController //: IDisposable
     {
+        #region Const
+
+        private const int GroundLayerIndex = 8;
+        private const int ObstacleLayerIndex = 3;
+
+        #endregion
+
+        #region Fields
+
         private readonly Dictionary<int, Action> _onTriggerSubscribers;
         private readonly IBall _ball;
+
+        #endregion
 
         internal TriggerBallController(IBall ball)
         {
@@ -15,8 +26,10 @@ namespace Assets.Scripts
             _ball = ball;
             _ball.BallView.OnTriggerEnterEvent += OnTriggerEnter;
             Register(8, _ball.OnGroundHit);
-            //Register(1, _ball.OnObstacleHit);
+            Register(3, _ball.OnObstacleHit);
         }
+
+        #region Methods
 
         public void Register(int key, Action onEvent)
         {
@@ -35,5 +48,7 @@ namespace Assets.Scripts
             _onTriggerSubscribers.TryGetValue(keyInt, out var handler);
             handler?.Invoke(); 
         }
+
+        #endregion
     }
 }
