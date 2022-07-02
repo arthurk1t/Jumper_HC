@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts.Common
 {
-    public enum GameState
+    public enum GameState 
     {
         START,
         PAUSE,
@@ -22,7 +22,7 @@ namespace Assets.Scripts.Common
 
         public void Update(float deltaTime)
         {
-            throw new NotImplementedException();
+            GameState state = GameState.START;
         }
     }
 }

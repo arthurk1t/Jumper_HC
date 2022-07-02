@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.Scripts.Common
+namespace Assets.Scripts
 {
     internal class DamageController
     {
+
     }
 }

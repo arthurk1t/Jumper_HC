@@ -28,7 +28,8 @@ namespace Assets.Scripts
         {
             if (damage < 1)
                 return;
-
+            
+            Debug.LogError("GAME OVER");
             _hp -= damage;
         }
 
