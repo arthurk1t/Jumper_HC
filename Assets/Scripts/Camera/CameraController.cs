@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Engine.UnityEvent;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -18,7 +19,7 @@ namespace Assets.Scripts
             _targetTransform = targetTransform;
         }
 
-        public void Update(float deltaTime)
+        public void CustomUpdate(float deltaTime)
         {
             if(_targetTransform.position.y < 0)
             {
